@@ -54,4 +54,4 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
   
 ## Relation to PIC 10C
 
-// todo
+// need to do

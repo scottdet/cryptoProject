@@ -1,4 +1,4 @@
-## Introdcution
+## Introduction
 
 I'm currently a fourth year student at UCLA studying computational mathematics. For this project I am pulling various cryptocurrencies pricing and volume data with the aim of making more informed trades based on a few features I will calculate using this data. I am also hoping to implement sentiment analysis in order to determine if bulk sentiment holds any merit in making future predictions. 
 

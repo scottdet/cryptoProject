@@ -28,8 +28,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 - Week 5
   - Project approved
   - Starting to research where I will get my data from
-
-
+##
 - Week 6
   - Working with Selenium in Python to pull data
   - Significant difficulties getting dependencies and Selenium subprocceses working 
@@ -47,7 +46,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
   - Getting tweets based on keywords
   - There are a few sentiment analysis libraries for Python, need to research pros and cons/implementation
   - Focusing on cleaning up the Twitter/Price scripts
---  
+
 - Week 10
   - Beginning to calculate other features that could be helpful in prediction
   - I will need to learn a lot more about economics before this trading bot is operational

@@ -32,7 +32,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 - Week 6
   - Working with Selenium in Python to pull data
   - Significant difficulties getting dependencies and Selenium subprocceses working 
-_
+___
 - Week 7
   - First real Progress, scraper is operational for BTC, ETH, Litecoin
   - Starting to pull volume data 

@@ -28,7 +28,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 - Week 5
   - Project approved
   - Starting to research where I will get my data from
-  
+---
 - Week 6
   - Working with Selenium in Python to pull data
   - Significant difficulties getting dependencies and Selenium subprocceses working 

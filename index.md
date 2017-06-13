@@ -1,37 +1,57 @@
-## Welcome to GitHub Pages
+## Introdcution
 
-You can use the [editor on GitHub](https://github.com/scottdet/cryptoProject/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I'm currently a fourth year student at UCLA studying computational mathematics. For this project I am pulling various cryptocurrencies pricing and volume data with the aim of making more informed trades based on a few features I will calculate using this data. I am also hoping to implement sentiment analysis in order to determine if bulk sentiment holds any merit in making future predictions. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Goals
 
-### Markdown
+- Write a script to pull pricing and volume data from a web browswer (do not want to pay for data or be rescrticed to large time scales)
+- Store data locally 
+- Pull Tweets containing key words like "Bitcoin" and "Ethereum"
+- Calculate covariances between cryptocurrencies
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Future Directions
 
-```markdown
-Syntax highlighted code block
+- Calculate more technical features. What is predictive of future price?
+- Merge various scripts into a working pipeline
+- Deploy a trading algorithm
 
-# Header 1
-## Header 2
-### Header 3
+## Code
 
-- Bulleted
-- List
+- Scraper
+- Tweets
+- Technical
 
-1. Numbered
-2. List
+(links coming soon)
 
-**Bold** and _Italic_ and `Code` text
+## Progress Reports 
 
-[Link](url) and ![Image](src)
-```
+- Week 5
+  - Project approved
+  - Starting to research where I will get my data from
+  
+- Week 6
+  - Working with Selenium in Python to pull data
+  - Significant difficulties getting dependencies and Selenium subprocceses working 
+  
+ - Week 7
+  - First real Progress, scraper is operational for BTC, ETH, Litecoin
+  - Starting to pull volume data 
+  - Need to parse data correctly and output cleaning to a file
+  
+- Week 8
+  - Previous weeks todo is done, going to dive into pulling Tweets based on keywords
+  - Researching Twitter's policy on pull requests and bot regulations
+  
+- Week 9
+  - Getting tweets based on keywords
+  - There are a few sentiment analysis libraries for Python, need to research pros and cons/implementation
+  - Focusing on cleaning up the Twitter/Price scriipts
+  
+- Week 10
+  - Beginning to calculate other features that could be helpful in prediction
+  - I will need to learn a lot more about economics before this trading bot is operational
+  - Putting it together here for a better presentation
+  
+## Relation to PIC 10C
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/scottdet/cryptoProject/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+// todo

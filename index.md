@@ -32,7 +32,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 - Week 6
   - Working with Selenium in Python to pull data
   - Significant difficulties getting dependencies and Selenium subprocceses working 
-
+_
 - Week 7
   - First real Progress, scraper is operational for BTC, ETH, Litecoin
   - Starting to pull volume data 
@@ -41,7 +41,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 - Week 8
   - Previous weeks todo is done, going to dive into pulling Tweets based on keywords
   - Researching Twitter's policy on pull requests and bot regulations
-  --
+  
 - Week 9
   - Getting tweets based on keywords
   - There are a few sentiment analysis libraries for Python, need to research pros and cons/implementation

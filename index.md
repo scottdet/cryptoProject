@@ -20,7 +20,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 - Scraper
 - Tweets
 - Ticker
-- Covariance
+- [Covariance](https://raw.githubusercontent.com/scottdet/cryptoProject/master/covariance.py)
 
 (links coming soon)
 

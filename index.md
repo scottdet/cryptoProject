@@ -19,7 +19,8 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 
 - Scraper
 - Tweets
-- Technical
+- Ticker
+- Covariance
 
 (links coming soon)
 
@@ -45,10 +46,11 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 - Week 9
   - Getting tweets based on keywords
   - There are a few sentiment analysis libraries for Python, need to research pros and cons/implementation
-  - Focusing on cleaning up the Twitter/Price scripts
+  - Beginning to calculate other features that could be helpful in prediction
 
 - Week 10
-  - Beginning to calculate other features that could be helpful in prediction
+  - Starting to store data from other script, need a decent backlog before I can find meaningful patterns
+  - Getting current data from a different source to calculate covariances for future use
   - I will need to learn a lot more about economics before this trading bot is operational
   - Putting it together here for a better presentation
   

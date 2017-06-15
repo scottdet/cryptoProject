@@ -66,13 +66,13 @@ One more key difference is that in C++, no-argument constructors for base classe
 
 ### Descrutors: 
 
-As far as I understand, the main difference between destructors in Python and C++ is that in C++, we have a mechanism for what happens when a constructor throws an exception. By this I mean in terms of calling destrcutors for sub-objects that have already been constructed. Many of these differences arise due to Python being unconcerned with raw memory. In C++ there is no garbage collection whereas Python handles much of this for the user and calls \__del\__, the counterpart to \__init\__ during runtime.
+As far as I understand, the main difference between destructors in Python and C++ is that in C++, we have a mechanism for what happens when a constructor throws an exception. By this I mean in terms of calling destrcutors for sub-objects that have already been constructed. Many of these differences arise due to Python being unconcerned with raw memory. In C++ there is no garbage collection whereas Python handles much of this for the user and calls \_\_del\__, the counterpart to \__init\__ during runtime.
 
 ### Iterators
  
 The iterators we learned to implement during this course are very flexible. This is an advantage that C++ has in control over our code. In C++ it is easy to change underlying container types. For example, we might decide later that the number of insertions and deletions is so high that a list would be more efficient than a vector, and our iterator can be easily used for this list even when it was created for a vector. Moreover, we can easily use our iterator bidirectionaly, such as with ++ or --. This is very useful to parse a stream like objects.
 
-In Python it did not seem like these things would be easy to accomplish. However, after some time on stackoverflow it seems like these implemenations are possible without __too much__ trouble. Consider the following examples:
+In Python it did not seem like these things would be easy to accomplish. However, after some time on stackoverflow it seems like these implemenations are possible without _too much_ trouble. Consider the following examples:
 
 If we want to replace objects in the underlying container. For dictionaries, iterate over the keys or items, not only the values:
 ```
@@ -96,7 +96,7 @@ def iter_with look_ahead(iterable, sentinel=None):
 for current, look_ahead in iter_with look_ahead(tokens):
     # your code here
 ```
-If we want to iterate in reverse. Use reversed() for containers that support it. Finally, to create a random access iterator in Python just turn your iterable into a list and use indices:
+If we want to iterate in reverse, it is straight forward to use reversed() for containers that support it. Finally, to create a random access iterator in Python just turn your iterable into a list and use indices:
 ```
 my_list = list(my_iterable)
 ```

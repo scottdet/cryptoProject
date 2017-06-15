@@ -54,16 +54,16 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
   
 ## Relation to PIC 10C
 
-# Constructors: 
+### Constructors: 
 
-The way Python and C++ construct objects have some similarities. Both languages call a function with a relatively simple responsibility. In Python this means calling __new__ for an object instance whereas in C++ we call some version of operator new for raw memory. Both languages then call a function which has the opportunity to do more work to initialize the object into a useful state. In Python we use __init__ and in C++ we create a constructor.
+The way Python and C++ construct objects have some similarities. Both languages call a function with a relatively simple responsibility. In Python this means calling \__new\__ for an object instance whereas in C++ we call some version of operator new for raw memory. Both languages then call a function which has the opportunity to do more work to initialize the object into a useful state. In Python we use \__init\__ and in C++ we create a constructor.
 
-There are also key differences between constructors in these two languages. As far as the Python language is concerned, you have a valid object of the specified type before you even enter __init__. It is then not a "constructor" in the way we learned during this course. In C++ and in my understanding of the definition, a constructor turns an invalid, pre-constructed object into a "proper" completed object of the type.
+There are also key differences between constructors in these two languages. As far as the Python language is concerned, you have a valid object of the specified type before you even enter \__init\__. It is then not a "constructor" in the way we learned during this course. In C++ and in my understanding of the definition, a constructor turns an invalid, pre-constructed object into a "proper" completed object of the type.
 
-Basically __new__ in Python is defined to return "the new object instance", whereas C++ new operators just return some memory, which is not yet an instance of any class. However, __init__ in Python is where you first establish some important class attributes so as I am conerned it functions similarly to a constructor.
+Basically \__new\__ in Python is defined to return "the new object instance", whereas C++ new operators just return some memory, which is not yet an instance of any class. However, \__init\__ in Python is where you first establish some important class attributes so as I am conerned it functions similarly to a constructor.
 
-One more key difference is that in C++, no-argument constructors for base classes are called automatically in the appropriate order if necessary, whereas for __init__ in Python, you have to explicitly initialize your base in your own __init__ functioin.
+One more key difference is that in C++, no-argument constructors for base classes are called automatically in the appropriate order if necessary, whereas for \__init\__ in Python, you have to explicitly initialize your base in your own \__init\__ functioin.
 
-# Descrutors: 
+### Descrutors: 
 
-# Iterators:
+### Iterators:

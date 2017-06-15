@@ -70,7 +70,7 @@ As far as I understand, the main difference between destructors in Python and C+
 
 ### Iterators
  
-The iterators we learned to implement during this course are very flexible. This is an advantage that C++ has in control over our code. In C++ it is easy to change underlying container types. For example, we might decide later that the number of insertions and deletions is so high that a list would be more efficient than a vector, and our iterator can be easily used for this list even when it was created for a vector. Moreover, we can easily use our iterator bidirectionaly, such as with ++ or --. This is very useful to parse a stream like objects.
+The iterators we learned to implement during this course are flexible. This is an advantage that C++ has in control over our code. In C++ it is easy to change underlying container types. For example, we might decide later that the number of insertions and deletions is so high that a list would be more efficient than a vector, and our iterator can be easily used for this list even when it was created for a vector. Moreover, we can easily use our iterator bidirectionaly, such as with ++ or --. This is very useful to parse a stream like objects.
 
 In Python it did not seem like these things would be easy to accomplish. However, after some time on stackoverflow it seems like these implemenations are possible without _too much_ trouble. Consider the following examples:
 

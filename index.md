@@ -56,17 +56,17 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 
 ### Constructors: 
 
-The way Python and C++ construct objects have some similarities. Both languages call a function with a relatively simple responsibility. In Python this means calling \__new\__ for an object instance whereas in C++ we call some version of operator new for raw memory. Both languages then call a function which has the opportunity to do more work to initialize the object into a useful state. In Python we use \__init\__ and in C++ we create a constructor.
+The way Python and C++ construct objects have some similarities. Both languages call a function with a relatively simple responsibility. In Python this means calling \_\_new\_\_ for an object instance whereas in C++ we call some version of operator new for raw memory. Both languages then call a function which has the opportunity to do more work to initialize the object into a useful state. In Python we use \_\_init\_\_ and in C++ we create a constructor.
 
-There are also key differences between constructors in these two languages. As far as the Python language is concerned, you have a valid object of the specified type before you even enter \__init\__. It is then not a "constructor" in the way we learned during this course. In C++ and in my understanding of the definition, a constructor turns an invalid, pre-constructed object into a "proper" completed object of the type.
+There are also key differences between constructors in these two languages. As far as the Python language is concerned, you have a valid object of the specified type before you even enter \_\_init\_\_. It is then not a "constructor" in the way we learned during this course. In C++ and in my understanding of the definition, a constructor turns an invalid, pre-constructed object into a "proper" completed object of the type.
 
-Basically \__new\__ in Python is defined to return "the new object instance", whereas C++ new operators just return some memory, which is not yet an instance of any class. However, \__init\__ in Python is where you first establish some important class attributes so as I am conerned it functions similarly to a constructor.
+Basically \_\_new\_\_ in Python is defined to return "the new object instance", whereas C++ new operators just return some memory, which is not yet an instance of any class. However, \_\_init\_\_ in Python is where you first establish some important class attributes so as I am conerned it functions similarly to a constructor.
 
-One more key difference is that in C++, no-argument constructors for base classes are called automatically in the appropriate order if necessary, whereas for \__init\__ in Python, you have to explicitly initialize your base in your own \__init\__ function.
+One more key difference is that in C++, no-argument constructors for base classes are called automatically in the appropriate order if necessary, whereas for \_\_init\_\_ in Python, you have to explicitly initialize your base in your own \_\_init\_\_ function.
 
 ### Descrutors: 
 
-As far as I understand, the main difference between destructors in Python and C++ is that in C++, we have a mechanism for what happens when a constructor throws an exception. By this I mean in terms of calling destrcutors for sub-objects that have already been constructed. Many of these differences arise due to Python being unconcerned with raw memory. In C++ there is no garbage collection whereas Python handles much of this for the user and calls \_\_del\__, the counterpart to \__init\__ during runtime.
+As far as I understand, the main difference between destructors in Python and C++ is that in C++, we have a mechanism for what happens when a constructor throws an exception. By this I mean in terms of calling destrcutors for sub-objects that have already been constructed. Many of these differences arise due to Python being unconcerned with raw memory. In C++ there is no garbage collection whereas Python handles much of this for the user and calls \_\_del\_\_, the counterpart to \_\_init\_\_ during runtime.
 
 ### Iterators
  

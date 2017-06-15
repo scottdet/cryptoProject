@@ -9,12 +9,6 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 - Pull Tweets containing key words like "Bitcoin" and "Ethereum"
 - Calculate covariances between cryptocurrencies
 
-## Future Directions
-
-- Calculate more technical features. What is predictive of future price?
-- Merge various scripts into a working pipeline
-- Deploy a trading algorithm
-
 ## Code
 
 - [Scraper](https://raw.githubusercontent.com/scottdet/cryptoProject/master/scrape.py)
@@ -51,6 +45,12 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
   - Getting current data from a different source to calculate covariances for future use
   - I will need to learn a lot more about economics before this trading bot is operational
   - Putting it together here for a better presentation
+  
+## Future Directions
+
+- Calculate more technical features. What is predictive of future price?
+- Merge various scripts into a working pipeline
+- Deploy a trading algorithm
   
 ## Relation to PIC 10C
 

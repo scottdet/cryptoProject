@@ -62,8 +62,41 @@ There are also key differences between constructors in these two languages. As f
 
 Basically \__new\__ in Python is defined to return "the new object instance", whereas C++ new operators just return some memory, which is not yet an instance of any class. However, \__init\__ in Python is where you first establish some important class attributes so as I am conerned it functions similarly to a constructor.
 
-One more key difference is that in C++, no-argument constructors for base classes are called automatically in the appropriate order if necessary, whereas for \__init\__ in Python, you have to explicitly initialize your base in your own \__init\__ functioin.
+One more key difference is that in C++, no-argument constructors for base classes are called automatically in the appropriate order if necessary, whereas for \__init\__ in Python, you have to explicitly initialize your base in your own \__init\__ function.
 
 ### Descrutors: 
 
-### Iterators:
+As far as I understand, the main difference between destructors in Python and C++ is that in C++, we have a mechanism for what happens when a constructor throws an exception. By this I mean in terms of calling destrcutors for sub-objects that have already been constructed. Many of these differences arise due to Python being unconcerned with raw memory. In C++ there is no garbage collection whereas Python handles much of this for the user and calls \__del\__, the counterpart to \__init\__ during runtime.
+
+### Iterators
+ 
+The iterators we learned to implement during this course are very flexible. This is an advantage that C++ has in control over our code. In C++ it is easy to change underlying container types. For example, we might decide later that the number of insertions and deletions is so high that a list would be more efficient than a vector, and our iterator can be easily used for this list even when it was created for a vector. Moreover, we can easily use our iterator bidirectionaly, such as with ++ or --. This is very useful to parse a stream like objects.
+
+In Python it did not seem like these things would be easy to accomplish. However, after some time on stackoverflow it seems like these implemenations are possible without __too much__ trouble. Consider the following examples:
+
+If we want to replace objects in the underlying container. For dictionaries, iterate over the keys or items, not only the values:
+'''
+for key, value in my_dict.iteritems():
+    if conditiion(value):
+        my_dict[key] = new_value
+'''
+For lists use enumerate():
+'''
+for index, item in enumerate(my_list):
+    if condition(item):
+        my_list[index] = new_item
+'''
+If we want an iterator with one "look-ahead" value. Here is a general solution:
+'''
+def iter_with look_ahead(iterable, sentinel=None):
+    iterable, it_ahead = itertools.tee(iterable)
+    next(it_ahead, None)
+    return izip_longest(iterable, it_ahead, fillvalue=sentinel)
+
+for current, look_ahead in iter_with look_ahead(tokens):
+    # your code here
+'''
+If we want to iterate in reverse. Use reversed() for containers that support it. Finally, to create a random access iterator in Python just turn your iterable into a list and use indices:
+'''
+my_list = list(my_iterable)
+'''

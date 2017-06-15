@@ -75,19 +75,19 @@ The iterators we learned to implement during this course are very flexible. This
 In Python it did not seem like these things would be easy to accomplish. However, after some time on stackoverflow it seems like these implemenations are possible without __too much__ trouble. Consider the following examples:
 
 If we want to replace objects in the underlying container. For dictionaries, iterate over the keys or items, not only the values:
-'''
+```
 for key, value in my_dict.iteritems():
     if conditiion(value):
         my_dict[key] = new_value
-'''
+```
 For lists use enumerate():
-'''
+```
 for index, item in enumerate(my_list):
     if condition(item):
         my_list[index] = new_item
-'''
+```
 If we want an iterator with one "look-ahead" value. Here is a general solution:
-'''
+```
 def iter_with look_ahead(iterable, sentinel=None):
     iterable, it_ahead = itertools.tee(iterable)
     next(it_ahead, None)
@@ -95,8 +95,8 @@ def iter_with look_ahead(iterable, sentinel=None):
 
 for current, look_ahead in iter_with look_ahead(tokens):
     # your code here
-'''
+```
 If we want to iterate in reverse. Use reversed() for containers that support it. Finally, to create a random access iterator in Python just turn your iterable into a list and use indices:
-'''
+```
 my_list = list(my_iterable)
-'''
+```

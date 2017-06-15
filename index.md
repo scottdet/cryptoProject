@@ -56,7 +56,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 
 ### Constructors: 
 
-The way Python and C++ construct objects have some similarities. Both languages call a function with a relatively simple responsibility. In Python this means calling \_\_new\_\_ for an object instance whereas in C++ we call some version of operator new for raw memory. Both languages then call a function which has the opportunity to do more work to initialize the object into a useful state. In Python we use \_\_init\_\_ and in C++ we create a constructor.
+The way Python and C++ construct objects have some similarities. Both languages call a function with a relatively simple responsibility. In Python this means calling \_\_new\__ for an object instance whereas in C++ we call some version of operator new for raw memory. Both languages then call a function which has the opportunity to do more work to initialize the object into a useful state. In Python we use \_\_init\_\_ and in C++ we create a constructor.
 
 There are also key differences between constructors in these two languages. As far as the Python language is concerned, you have a valid object of the specified type before you even enter \_\_init\_\_. It is then not a "constructor" in the way we learned during this course. In C++ and in my understanding of the definition, a constructor turns an invalid, pre-constructed object into a "proper" completed object of the type.
 

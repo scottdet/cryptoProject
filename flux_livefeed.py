@@ -14,8 +14,8 @@ import html2text
 form = cgi.FieldStorage()
 searchterm = form.getvalue('searchbox')
 
-auth = tweepy.OAuthHandler("EKbYg6CUbKQRvVqfr0mVgbFq6", "qG9hnE8HtzbLBxBeynUEaWLdZdEt6pIGaZJLNiDIa21wz2ngd5")
-auth.set_access_token("703518623701164032-zOf5QwEgVFmV58QW67qqqbojwYWDGan", "bumLD5Vq1uaBi55Uv47vKFLRmJvtYj6i0NgfFmxgfHmIe")
+auth = tweepy.OAuthHandler() # your twitter access tokens here
+auth.set_access_token()
 api = tweepy.API(auth)
 
 words=[]
@@ -57,8 +57,3 @@ myStreamListener = MyStreamListener()
 myStream = tweepy.Stream(auth = api.auth, listener=MyStreamListener())
 
 myStream.filter(track=["bitcoin"])
-
-
-
-
-

@@ -12,7 +12,7 @@ I'm currently a fourth year student at UCLA studying computational mathematics. 
 ## Code
 
 - [Scraper](https://raw.githubusercontent.com/scottdet/cryptoProject/master/scrape.py)
-- Tweets
+- [Tweets](https://raw.githubusercontent.com/scottdet/cryptoProject/master/flux_livefeed.py)
 - [Ticker](https://raw.githubusercontent.com/scottdet/cryptoProject/master/ticker.py)
 - [Covariance](https://raw.githubusercontent.com/scottdet/cryptoProject/master/covariance.py)
 
